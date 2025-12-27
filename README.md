@@ -82,36 +82,34 @@ Incident indetified
 
 ## Flow with Tech
 ![Flow](flow3.png)
-### Insta
+## Installation & Setup
+Prerequisites
+Make Sure the following are installed onyour system:
+* Node.js
+* npm
+* Git
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
-
-```bash
-pip install foobar
+Check version using:
 ```
-
-## Usage
-
-```python
-import foobar
-
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
+node -v
+npm -v
+git --version
 ```
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
+#### Clone the Repository
+```
+git clone 
+```
+#### Install Dependencies
+```
+npm install
+```
+This will install all required dependencies using:
+* React
+* Vite
+* Tailwind CSS
+* Bootstrap
+* Lucide React(icons)
+#### Run the Development Server
+```
+npm run dev
+```
