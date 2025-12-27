@@ -77,7 +77,8 @@ Incident indetified
 ## Flow of YUVALINK
 ![Flow](flow.png)
 
-
+## Tech Stack
+![Flow](flow2.png)
 
 ### Insta
 
