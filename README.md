@@ -80,6 +80,8 @@ Incident indetified
 ## Tech Stack
 ![Flow](flow2.png)
 
+## Flow with Tech
+![Flow](flow3.png)
 ### Insta
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
