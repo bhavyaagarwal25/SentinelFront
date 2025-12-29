@@ -1,10 +1,26 @@
+<div align="center">
+ <span>
+ <img src="assets\images\.png" alt="YuvaLink" width="150" height="auto" />
+ </span>
 # YuvaLink
+YuvaLink bridges the gap between disaster information,available volunteers and coordination systems through :
 
-There is no safe, structured, and real-time system to coordinate civilian volunteers with authorities after a disaster is verified.
-### Why should I make it ?
-In Disastar situations,information about the incident usually reaches authorities through helplines and control rooms.
+continuously monitors real-time disaster-related information through a News API inttegeration.
+When a disaster is reported on trusted news portals,the information is instantly reflected on the admin dashboard.
+The admin verifies the information and activated the incident,triggering an immediate response workflow.It refers to youth-focused platform and intiatives that aim to connect young and civilian volunteers.
+
+For Better Understanding here is our [**Presentation**](https://docs.google.com/presentation/d/1qgxC8A8gGHOrgrNvrWlTn6GrzoLbNCwF/edit?usp=sharing&ouid=103690335248498847681&rtpof=true&sd=true)
+### Problem Statement
+In Disastar situations,information about the incident usually reaches authorities through tradional ways helplines and control rooms.
 However,the Real- challenge begins after that-Coordinating volunteers efficiently and safely.
-
+```
+Disaster Occurs
+      |-->Public informs authorities via helplines/control rooms
+      |-->Authorities have volunteer support but lack real-time coordination tools
+      |-->unverified volunteers
+      |-->Resource duplication in some areas
+      |-->Everything becomed very chaotic
+```
 ### Why existing solution fail ?
 ```
 Disaster Occurs
