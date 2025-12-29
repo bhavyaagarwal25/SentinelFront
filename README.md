@@ -4,15 +4,6 @@
  </span>
 </div>
 
-# YuvaLink
-
-YuvaLink bridges the gap between disaster information,available volunteers and coordination systems through :
-
-continuously monitors real-time disaster-related information through a News API inttegeration.
-When a disaster is reported on trusted news portals,the information is instantly reflected on the admin dashboard.
-The admin verifies the information and activated the incident,triggering an immediate response workflow.It refers to youth-focused platform and intiatives that aim to connect young and civilian volunteers.
-
-For Better Understanding here is our [**Presentation**](https://docs.google.com/presentation/d/1qgxC8A8gGHOrgrNvrWlTn6GrzoLbNCwF/edit?usp=sharing&ouid=103690335248498847681&rtpof=true&sd=true)
 ### Problem Statement
 In Disastar situations,information about the incident usually reaches authorities through tradional ways helplines and control rooms.
 However,the Real- challenge begins after that-Coordinating volunteers efficiently and safely.
@@ -24,6 +15,18 @@ Disaster Occurs
       |-->Resource duplication in some areas
       |-->Everything becomed very chaotic
 ```
+# YuvaLink
+
+YuvaLink bridges the gap between disaster information,available volunteers and coordination systems through :
+  1. Continuously monitors real-time disaster-related information through (News API inttegeration)
+  2. Real-time volunteer Matching(Location-based filtering)
+  3. Structured Task Aloocation (Accept/Decline system)
+  4. Organized Team Formation(Automated teams with designated leads)
+  5. Controlled Communication(Chat Rooms)
+
+It refers to youth-focused platform and intiatives that aim to connect young and civilian volunteers.
+
+For Better Understanding here is our [**Presentation**](https://docs.google.com/presentation/d/1qgxC8A8gGHOrgrNvrWlTn6GrzoLbNCwF/edit?usp=sharing&ouid=103690335248498847681&rtpof=true&sd=true)
 ### Why existing solution fail ?
 ```
 Disaster Occurs
