@@ -1,8 +1,11 @@
 <div align="center">
  <span>
- <img src="assets\images\.png" alt="YuvaLink" width="150" height="auto" />
+ <img src="logo.png" alt="YuvaLink" width="150" height="auto" />
  </span>
+</div>
+
 # YuvaLink
+
 YuvaLink bridges the gap between disaster information,available volunteers and coordination systems through :
 
 continuously monitors real-time disaster-related information through a News API inttegeration.
