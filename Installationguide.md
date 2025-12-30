@@ -22,10 +22,10 @@ For Setup guide video tutorial go to [YUVALINK Setup Guide](https://drive.google
 ## Quick Start
 
 1. **Clone the repository**
-```sh
-git clone https://github.com/Saurabhgit120/YUVALINK.git
-cd YUVALINK
-```
+      ```sh
+      git clone https://github.com/Saurabhgit120/YUVALINK.git
+      cd YUVALINK
+      ```
 
 2. **Navigate to backend Folder**
       ```sh
@@ -36,126 +36,125 @@ cd YUVALINK
      npm install
      ```
 4. **Setup enviorment variables**
-```
-## copy the example enviorment file
-cp env.example .env
-## Edit .env with your API keys and configuration
-nano .env ## or choose your preferred editor
-
-```
+    ```
+    ## copy the example enviorment file
+    cp env.example .env
+    ## Edit .env with your API keys and configuration
+    nano .env ## or choose your preferred editor
+    
+    ```
 #### Generate App Key:
-```
-node ace generate:key
-```
+    ```
+    node ace generate:key
+    ```
 5. Enable PostGIS
-```
-CREATE Extension postgis;
-```
+    ```
+    CREATE Extension postgis;
+    ```
 6. **Run Databse Migrations**
-      ```sh
+    ```sh
       node ace migration:run
-      ```
+    ```
 7. **Start Backend Server**
-   ```sh
+    ```sh
    npm run dev
-   ```
+    ```
 8. **Navigate to Frontend folder**
-```
-cd frontend
-```
-9. ** Install React **
-```
-## React core libraries
-# react => To build UI Components
-# react-dom => To render React components on Browser
-npm install react react-dom
-```
-10. ** Install Vite **
-```
-# Vite (Development & Build Tool)
-# Vite => Fast development server + optimized production build
-npm install -D vite
-```
-11. ** Install Tailwind CSS **
-```
-npm install -D tailwindcss
-```
-12. ** Install Bootstrap icons **
-```
-npm install bootstrap-icons
-```
+    ```
+    cd frontend
+    ```
+9. **Install React**
+    ```
+    ## React core libraries
+    # react => To build UI Components
+    # react-dom => To render React components on Browser
+    npm install react react-dom
+    ```
+10. **Install Vite**
+    ```
+    # Vite (Development & Build Tool)
+    # Vite => Fast development server + optimized production build
+    npm install -D vite
+    ```
+11. **Install Tailwind CSS**
+    ```
+    npm install -D tailwindcss
+    ```
+12. **Install Bootstrap icons**
+    ```
+    npm install bootstrap-icons
+    ```
 ## Usage 
- 1.React + React DOM
-```
-## main.jsx
-import React from "react"; 
-import ReactDOM from "react-dom/client";
-import App from "./App";
-import "bootstrap/dist/css/bootstrap.min.css"; 
-import "bootstrap-icons/font/bootstrap-icons.css";
-import "./index.css";
-ReactDOM.createRoot(document.getElementById("root")).render(
-        <App/>
-  
-);
-```
- 2.Vite.config.js
- ```
- ## vite.config.js 
- import {defineConfig} from "vite";
-import react from "@vitejs/plugin-react";
-export default defineConfig({
-    plugins: [react()],
-});
-```
-3.Tailwind CSS
-```
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-```
-```
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,jsx,ts,tsx}"
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
-```
-```
-## Example usage in component
-<button className="bg-blue-600 text-white px-4 py-2 rounded-lg">
-Activate
-</button>
-```
-4. Bootstrap Icons
-```
-import "bootstrap-icons/font/bootstrap-icons.css";
-```
-```
-<i className="bi bi-chat-dots-fill text-xl"></i>
-```
+ 1. **React + React DOM**
+      ```
+         ## main.jsx
+         import React from "react"; 
+         import ReactDOM from "react-dom/client";
+         import App from "./App";
+         import "bootstrap/dist/css/bootstrap.min.css"; 
+         import "bootstrap-icons/font/bootstrap-icons.css";
+         import "./index.css";
+         ReactDOM.createRoot(document.getElementById("root")).render(
+              App/>
+              );
+      ```
+ 2. **Vite.config.js**
+      ```
+         ## vite.config.js 
+         import {defineConfig} from "vite";
+        import react from "@vitejs/plugin-react";
+        export default defineConfig({
+            plugins: [react()],
+        });
+      ```
+3. **Tailwind CSS**
+      ```
+          @tailwind base;
+          @tailwind components;
+          @tailwind utilities;
+      ```
+      ```
+          /** @type {import('tailwindcss').Config} */
+          module.exports = {
+            content: [
+              "./index.html",
+              "./src/**/*.{js,jsx,ts,tsx}"
+            ],
+            theme: {
+              extend: {},
+            },
+            plugins: [],
+          }
+      ```
+      ```
+          ## Example usage in component
+          <button className="bg-blue-600 text-white px-4 py-2 rounded-lg">
+          Activate
+          </button>
+      ```
+4. **Bootstrap Icons**
+      ```
+          import "bootstrap-icons/font/bootstrap-icons.css";
+      ```
+      ```
+          <i className="bi bi-chat-dots-fill text-xl"></i>
+      ```
 ## Environment Variables  
 create a '.env' file in the project root with the following vaiables:
-## Required Variables
-```env
-NODE_ENV=development
-PORT=3333
-APP_KEY=base64:GENERATE_KEY
-HOST=0.0.0.0
-
-DB_CONNECTION=pg
-PG_HOST=127.0.0.1
-PG_PORT=5432
-PG_USER=postgres
-PG_PASSWORD=password
-PG_DB_NAME=disaster_db
-```
+#### Required Variables
+  ```env
+              NODE_ENV=development
+              PORT=3333
+              APP_KEY=base64:GENERATE_KEY
+              HOST=0.0.0.0
+              
+              DB_CONNECTION=pg
+              PG_HOST=127.0.0.1
+              PG_PORT=5432
+              PG_USER=postgres
+              PG_PASSWORD=password
+              PG_DB_NAME=disaster_db
+  ```
 ## Database Setup
 1. Users Table
 ```
@@ -304,7 +303,40 @@ ws.on('connection', (socket) => {
   socket.join(`appointment:${appointmentId}`)
 })
 ```
-
+## Project Structure(FrontEnd)
+```
+YuvaLink/
+|-->Frontend/
+    |-->src
+        |-->components
+            |-->ChatRoom.jsx
+            |-->NewsFeed.jsx
+            |-->Sidebar.jsx
+            |-->statspanel.jsx
+        |-->pages
+            |-->AdminDashboard.jsx
+        |-->Styles
+            |-->admintailwind.css
+            |-->chatroom.css
+            |-->newsfeed.css
+            |-->stats.css
+        |-->App.jsx
+        |-->index.css
+        |-->main.jsx
+   |-->.env
+   |-->index.html
+   |-->package-lock.json
+   |-->package.json
+   |-->postcss.config.cjs
+   |-->tailwind.config.js
+   |-->vite.config.js
+   |-->node_modules
+   |-->public
+|-->BackEnd
+|-->assets
+|-->YuvaLinkReadme.md
+|-->Installationguide.md
+```
 
 
 
