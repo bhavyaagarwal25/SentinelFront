@@ -313,13 +313,23 @@ YuvaLink/
             |-->NewsFeed.jsx
             |-->Sidebar.jsx
             |-->statspanel.jsx
+            |-->ActivityHistory.jsx
+            |-->TaskCard.jsx
+            |-->TaskSection.jsx
+            |-->TeamDetails.jsx
+            |-->Profile.jsx
         |-->pages
             |-->AdminDashboard.jsx
+            |-->volunteer.jsx
         |-->Styles
             |-->admintailwind.css
             |-->chatroom.css
             |-->newsfeed.css
             |-->stats.css
+            |-->Activity.css
+            |-->tasks.css
+            |-->profile.css
+            |-->team.css
         |-->App.jsx
         |-->index.css
         |-->main.jsx
