@@ -109,6 +109,19 @@ Incident indetified
 ![Flow](flow.png)
 
 ## Tech Stack
+- **[ReactJS]** – A powerful JavaScript library for building fast, interactive user interfaces.
+- **[TailwindCSS]** – A utility-first CSS framework for rapidly building modern, responsive designs.
+- **[Bootstrap]** – A popular UI framework providing pre-built components and responsive layouts.
+- **[Redux]** – State management library for predictable and centralized application state handling.
+- **[NodeJS]** – Event-driven, non-blocking I/O runtime for building scalable backend services.
+- **[AdonisJS]** – A fast and fully-featured Node.js framework for building robust server-side applications.
+- **[PostgreSQL]** – A powerful, open-source relational database for secure and reliable data storage.
+- **[Lucid ORM]** – An elegant ORM for AdonisJS to interact with the database using JavaScript models.
+- **[VineJS]** – A modern validation library for validating API requests and user inputs.
+- **[REST APIs]** – Enables seamless communication between frontend and backend services.
+- **[JWT Authentication]** – Secure user authentication and role-based access control.
+- **[Git & GitHub]** – Version control and collaboration tools for efficient development.
+
 ![Flow](flow2.png)
 
 ## Flow with Tech
