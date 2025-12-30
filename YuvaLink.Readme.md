@@ -137,9 +137,6 @@ YuvaLink uses modern web technologies with real-time capabilites,making setup St
 For detailed set up instructions and deployment guides, please refer to our [Installation Guide](/Installationguide.md)
 ### Contributions
   * **Bhavya Agarwal** => Desgin Admin Dashboard(Frontend) with News Integeration
-  
   * **Anushka Negi** =>Design Volunteer Dashboard(frontend) with webSockets Integeration
-  
- *  **Saurabh Singh** => Handle Database (Lucid ORM) + Volunteer verification
-  
- *  **Ayushman Chauhan** => Backend 
+  *  **Saurabh Singh** => Handle Database (Lucid ORM) + Volunteer verification
+  *  **Ayushman Chauhan** => Backend 
