@@ -26,7 +26,7 @@ YuvaLink bridges the gap between disaster information,available volunteers and c
 
 It refers to youth-focused platform and intiatives that aim to connect young and civilian volunteers.
 
-For Better Understanding here is our [**Presentation**](https://docs.google.com/presentation/d/1qgxC8A8gGHOrgrNvrWlTn6GrzoLbNCwF/edit?usp=sharing&ouid=103690335248498847681&rtpof=true&sd=true)
+For Better Understanding here is our [**Presentation**](https://drive.google.com/file/d/1T0k9H3qrIIWX9ZomxgQ10ZlVCMFme_88/view?usp=sharing)
 ### Why Existing Solutions Fail ?
 Most platforms lack real-time features:
 1.  Volunteers( [VolunteerMatch](https://www.idealist.org/volunteermatch), [UNV](https://www.unv.org/) ) -> slow matching,no emergency focus,general volunteer system,not disaster-specific
