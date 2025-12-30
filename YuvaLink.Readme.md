@@ -129,15 +129,17 @@ Incident indentified
 ## Getting Started
 YuvaLink uses modern web technologies with real-time capabilites,making setup Straightforward compared to complex AI architectures.Our stack ensures reliability,scalability,and developer productivity.
 ### Quick Start
+
  1. Clone the Repository
- 2. Follow our comprehensive [Installation Guide](/InstallationGuide.md)
+ 2. Follow our comprehensive [Installation Guide](/Installationguide.md)
  3. Run the deployment enviorment
-For detailed set up instructions and deployment guides, please refer to our [Installation Guide] (/InstallationGuide.md)
+
+For detailed set up instructions and deployment guides, please refer to our [Installation Guide](/Installationguide.md)
 ### Contributions
-  **Bhavya Agarwal** => Desgin Admin Dashboard(Frontend) with News Integeration
+  * **Bhavya Agarwal** => Desgin Admin Dashboard(Frontend) with News Integeration
   
-  **Anushka Negi** =>Design Volunteer Dashboard(frontend) with webSockets Integeration
+  * **Anushka Negi** =>Design Volunteer Dashboard(frontend) with webSockets Integeration
   
-  **Saurabh Singh** => Handle Database (Lucid ORM) + Volunteer verification
+ *  **Saurabh Singh** => Handle Database (Lucid ORM) + Volunteer verification
   
-  **Ayushman Chauhan** => Backend 
+ *  **Ayushman Chauhan** => Backend 
