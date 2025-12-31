@@ -1,7 +1,7 @@
 # Yuvalink Installation Guide
 
 Follow this guide to set up Yuvalink on your local machine.
-For Setup guide video tutorial go to [YUVALINK Setup Guide](https://drive.google.com/file/d/1UQFn9Y02623RMo59J_j3CHRN7Nq_kgZE/view?usp=drivesdk)
+
 
 ## Prerequisites
    * [Node.js](https://nodejs.org/en/download)  (latest LTS version)   
