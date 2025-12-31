@@ -135,13 +135,18 @@ YuvaLink uses modern web technologies with real-time capabilites,making setup St
  3. Run the deployment enviorment
 
 For detailed set up instructions and deployment guides, please refer to our [Installation Guide](/Installationguide.md)
-### Contributions
-  * **Bhavya Agarwal** => Desgin Admin Dashboard(Frontend) with News Integeration
-  * **Anushka Negi** =>Design Volunteer Dashboard(frontend) with webSockets Integeration
-  *  **Saurabh Singh** => Handle Database (Lucid ORM) + Volunteer verification
-  *  **Ayushman Chauhan** => Backend(ALL Integeration + User Auth)
 ## Prototype
  * For Demo purpose only we have done backend integeration in user Auth [LandingPage](https://drive.google.com/file/d/1o8P14dIMkjN5666joIhA2HOEmXBjTQlV/view?usp=sharing)
  * For Better Understanding here is our [AdminDashBoard](https://drive.google.com/file/d/1Bq2kA70YmX_UDSljL3beI3itCxff6oWX/view?usp=sharing) 
    
  * For Better Understanding here is our  [VolunteerDashBoard](https://drive.google.com/file/d/1Bq2kA70YmX_UDSljL3beI3itCxff6oWX/view?usp=sharing)
+## Repository Link
+[YuvaLink](https://github.com/bhavyaagarwal25/YuvaLink)
+[YuvaLinkFrontEnd](https://github.com/Ayushmangit/yuvalinkFrontend.git)
+[YuvaLinkBackEnd]()
+
+### Contributions
+  * **Bhavya Agarwal** => Desgin Admin Dashboard(Frontend) with News Integeration
+  * **Anushka Negi** =>Design Volunteer Dashboard(frontend) with webSockets Integeration
+  *  **Saurabh Singh** => Handle Database (Lucid ORM) + Volunteer verification
+  *  **Ayushman Chauhan** => Backend(ALL Integeration + User Auth)
