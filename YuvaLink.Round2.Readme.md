@@ -18,6 +18,14 @@ Disaster Occurs
       |-->Resource duplication in some areas
       |-->Everything becomes very chaotic
 ```
+## Improvements from Round 1 to Round 2
+
+- Converted static volunteer listings into geo-based real-time task allocation.
+- Introduced accept/decline logic with decline limits to prevent volunteer misuse.
+- Added WebSocket-based real-time updates for tasks and incident status.
+- Designed a scalable system architecture with defined failure-handling strategies.
+- Clearly divided system ownership across team members for better integration.
+
 ## Solution Overview
 * Dual-dashboard architecture separates disaster control (Admin) from execution (Volunteers), ensuring fast and structured response.
 * Automated disaster detection using News API combined with human verification, preventing false activations.
@@ -56,8 +64,6 @@ Frontend is developed using React and Tailwind CSS and provides separate interfa
 - Monitors volunteer participation
 - Communicate with designated team leaders
 
-This role based separation reduces chaos and ensures structures coordination during emergency 
-situations.
 
 ### API Communciation Layer
 
@@ -94,16 +100,38 @@ YuvaLink uses PostgreSQL with PostGIS to efficiently manage structured data:
 - Task assignments and team information
 - Analytics and operational logs
 
-### Scalability & Future Growth
+## Growth & Scaling Strategy
 
-The system is designed to scale as user demand increases:
+### Phase 1: City-Level Deployment
+- Single backend instance with PostgreSQL + PostGIS.
+- Redis used for volunteer availability and decline tracking.
+- WebSockets support real-time task updates.
 
-- Redis caching for frequently accesed data
-- WebSocket based real time updates
-- Load Balancers for traffic distribution
-- Microservices architecture for independent scaling of critical services
+### Phase 2: Multi-City Scale
+- City-based sharding for incidents and volunteers.
+- Separate task allocation service.
+- Redis clusters per region with load-balanced WebSocket servers.
 
-This architecture ensures YuvaLink remains reliable, scalable and efficient even under high traffic and emergency conditions.
+### Phase 3: National Scale
+- Disaster detection and task allocation as independent services.
+- Event-driven communication for task assignment.
+- Read replicas for analytics and monitoring.
+
+**Primary Bottlenecks & Mitigation**
+- WebSocket concurrency → horizontal scaling
+- Geo queries → regional sharding
+- Task assignment latency → async processing
+
+## Failure Handling & Safety Mechanisms
+
+- **False Disaster Alerts:** Admin verification prevents automatic activation.
+- **Volunteer Abuse:** Repeated task declines trigger temporary cooldowns.
+- **Leader Failure:** Team leadership is reassigned automatically.
+- **Network Issues:** WebSocket failures fall back to REST-based polling.
+- **Cache Failure:** System degrades gracefully using database state.
+
+System prioritizes reliability and controlled coordination during emergencies.
+
 
 
 ## System Flow 
@@ -141,8 +169,7 @@ YuvaLink helps authorities manage volunteers in a faster, safer and more organiz
 ### Real-World Impact
 
 - **Faster help during disaster**
-  YuvaLink assigns nearby verified volunteers to tasks in real time.
-  This helps to reduce delays and ensures that help reaches affected people quickly.
+  Assigns nearby verified volunteers in real time, reducing response delays.
 
 - **Safe and Trusted Volunteers**
   All volunteers are verified based on identity, skills and availability.
@@ -152,9 +179,6 @@ YuvaLink helps authorities manage volunteers in a faster, safer and more organiz
   Tasks are allocated based on volunteer skills and location.
   This avoids duplication of work and ensures all areas receive proper support.
 
-- **Clear and Controlled Communication**
-  Only team leaders are allowed to communicate with admins.
-  This reduces confusion, misinformation and chaos during emergencies.
 
 
 ### Who benefits from YuvaLink
@@ -173,10 +197,9 @@ YuvaLink helps authorities manage volunteers in a faster, safer and more organiz
 - Receive faster and more organized help
 - Reduced response time can help ssave lives
 
-Overall, YuvaLink turns an unorganized disaster response process into a **structured, reliable and efficient system** where every minute matters.
 
 
-### Team Contributions
+## Team Contributions
 
 - **Bhavya Agarwal**
   Designed and implemented the Admin Dashboard(Frontend) with News API Integration.
